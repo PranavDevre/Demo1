@@ -1,0 +1,64 @@
+1.use hospitaldbs
+
+2.db.patient_data.insertOne({No:1,Name:"ajay",city="Delhi"})
+
+3.db.patient.find()
+
+------------------------------------------------------------------------------
+
+Q.Write a query to display the name,fees of  student,whoose subject is DS
+ db.student.find({subject:"Data Structure"},{name:1.fees:1})
+
+------------------------------------------------------------------------------
+Q.Show all the field in item lg
+
+db.item.find({name:"LG"});
+
+-----------------------------------------------------------------------------
+
+use employee;
+
+db.employee_data.insertmany({[id:1,name:"Ajay",city:"Delhi",Position:"Developer"},{id:2,name:"Rahul",city:"Chennai",Position:"Tester"}]);
+
+----------------------------------------------------------------------------
+
+db.beverage.find({desc:"stawberry"},{price:1})
+
+--------------------------------------------------------------------------
+display name of hospital whoose city is kolkata
+
+db.hospital.find({city:"Kolkata"},{name:1})
+
+------------------------------------------------------------------------------
+
+Quesry examples
+
+1.db.restaurants.find();
+
+2.db.rastaurants.find({},{restaurant_id:1,restaurant_name})
+
+------------------------------------------------------------------------------
+
+db.bank.find({},{$gte:5000});
+db.customer.find({"city":{$ne:"delhi"}});
+
+db.employee.find({"city":{$in:["delhi","kolkata","Mumbai"]}})//whose city is delhi kolkata mumbai
+
+---------------------------------------------------------------------------
+display whosecourse is either java  or .net
+
+db.student.find({$or:[{"course":"Java"},{"course":"java"}]});
+
+
+------------------------------------------------------------------------------
+
+Exercise monogodb
+9.db.restaurants.find({"score":,{$gt:80,$lt:100}}]);
+
+10.db.restaurants.find({"address.coord" : {$lt : -95.754168}});
+
+
+===============================
+
+make a databases
+create databases name is FILM INDUSTRY
