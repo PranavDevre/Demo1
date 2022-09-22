@@ -1,0 +1,9 @@
+1.create database fitness;
+2.use database ;
+3.create table fitness_product (pcode varchar(20),pname varchar(20),price int,manufact varchar(20));
+4.insert into fitness_product("p1","treadmill",21000,"coscore");
+  insert into fitness_product("p2","bike",20000,"aone");
+
+5.select name from fitness_product where price>20000;
+6.select name from fitness_product where manufact="aone";
+7.update fitness_product set price="price*25/100;

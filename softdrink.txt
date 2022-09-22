@@ -1,0 +1,13 @@
+create table softdrink(drinkscodes int,dname varchar(20),price int,calories int);
+
+insert into softdrink values(101,"Lime and Lemon",20,120);
+insert into softdrink values(102,"Apple drink",18,120);
+insert into softdrink values(103,"Natural Nectar",15,115);
+
+select dnames,drinkscodes from softdrink where calories>120;
+
+
+select drinkscodes,dnames,calories from softdrink order by calories desc;
+
+
+select dname,price from softdrink where price between 12 and 18;
