@@ -1,0 +1,42 @@
+l=[3,4,5,6,7,8]
+//4 5 6 7 8 3
+k=l.pop(0)
+l.append(k)
+print(k)
+
+
+l=[3,4,5,6,7,8]
+c=0
+
+for i in range(0,len(l),1)
+	if(l[i]%2==0):
+	c=c+1
+print(c)
+
+---------------------------------------
+
+l=[50,65,47,84,95,89,47,65,85,70]
+f=0;
+f1=0;
+for i in range(0,len(l),1):
+	if(l[i]>50):
+	   f=f+1;
+	else:
+	    f1=f1+1;
+	       
+print("Pass Student:",f)
+print("Fail Student",f1)
+
+===========================
+check user id password in dictionary
+
+data={"Pranav":232,"Rahul":321,"xyz":545}
+user= input("Enter user ")
+if user in data:
+    pas=int(input("Enter pass"))
+    if(data[user]==pas):
+        print("Correct")
+    else:
+        print("Incorrect User id and password")
+else:
+    print("User not exist")
